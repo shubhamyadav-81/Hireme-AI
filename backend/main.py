@@ -15,17 +15,16 @@ from fastapi.responses import StreamingResponse
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 model = "openai/gpt-oss-120b"
-app = FastAPI()
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://YOUR-VERCEL-DOMAIN.vercel.app",
+        "https://shubham-ai-wheat.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
