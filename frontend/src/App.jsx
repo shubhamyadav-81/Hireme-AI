@@ -2,10 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./App.css";
 
-import { useEffect, useRef, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import "./App.css";
-
 const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
 
 
