@@ -23,8 +23,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "https://shubham-ai-wheat.vercel.app",
+    "http://localhost:5173",
+    "https://shubhamyadav-ai.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
